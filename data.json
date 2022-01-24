@@ -1,5 +1,5 @@
 {
-  "Photsnap": {
+  "Photosnap": {
     "id": 1,
     "company": "Photosnap",
     "logo": "/images/photosnap.svg",
@@ -55,7 +55,7 @@
     "location": "USA Only",
     "tags": ["CSS", "JavaScript"]
   },
-  "Loop Studios": {
+  "LoopStudios": {
     "id": 5,
     "company": "Loop Studios",
     "logo": "/images/loop-studios.svg",
@@ -111,7 +111,7 @@
     "location": "USA Only",
     "tags": ["JavaScript","Vue", "Sass"]
   },
-  "Eyecam Co.": {
+  "EyecamCo": {
     "id": 9,
     "company": "Eyecam Co.",
     "logo": "/images/eyecam-co.svg",
@@ -125,7 +125,7 @@
     "location": "Worldwide",
     "tags": ["JavaScript", "Python","Django"]
   },
-  "The Air Filter Company": {
+  "TheAirFilterCompany": {
     "id": 10,
     "company": "The Air Filter Company",
     "logo": "/images/the-air-filter-company.svg",
