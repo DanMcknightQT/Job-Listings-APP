@@ -11,7 +11,7 @@
     "postedAt": "1d ago",
     "contract": "Full Time",
     "location": "USA Only",
-    "tags": ["HTML", "CSS", "JavaScript"]
+    "tags": ["HTML", "CSS", "JavaScript", "Frontend", "Senior"]
   },
   "Manage": {
     "id": 2,
@@ -25,7 +25,7 @@
     "postedAt": "1d ago",
     "contract": "Part Time",
     "location": "Remote",
-    "tags": ["Python","React"]
+    "tags": ["Python","React", "Fullstack", "Midweight"]
   },
   "Account": {
     "id": 3,
@@ -39,7 +39,7 @@
     "postedAt": "2d ago",
     "contract": "Part Time",
     "location": "USA Only",
-    "tags": ["JavaScript","React", "Sass"]
+    "tags": ["JavaScript","React", "Sass", "Junior", "Frontend"]
   },
   "MyHome": {
     "id": 4,
@@ -53,7 +53,7 @@
     "postedAt": "5d ago",
     "contract": "Contract",
     "location": "USA Only",
-    "tags": ["CSS", "JavaScript"]
+    "tags": ["CSS", "JavaScript", "Junior", "Frontend"]
   },
   "LoopStudios": {
     "id": 5,
@@ -67,7 +67,7 @@
     "postedAt": "1w ago",
     "contract": "Full Time",
     "location": "Worldwide",
-    "tags": ["JavaScript","Ruby", "Sass"]
+    "tags": ["JavaScript","Ruby", "Sass", "Fullstack", "Midweight"]
   },
   "FaceIt": {
     "id": 6,
@@ -81,7 +81,7 @@
     "postedAt": "2w ago",
     "contract": "Full Time",
     "location": "UK Only",
-    "tags": ["Ruby","RoR"]
+    "tags": ["Ruby","RoR", "Backend", "Junior"]
   },
   "Shortly": {
     "id": 7,
@@ -95,7 +95,7 @@
     "postedAt": "2w ago",
     "contract": "Full Time",
     "location": "Worldwide",
-    "tags": ["HTML", "JavaScript","Sass"]
+    "tags": ["HTML", "JavaScript","Sass", "Frontend", "Junior"]
   },
   "Insure": {
     "id": 8,
@@ -109,7 +109,7 @@
     "postedAt": "2w ago",
     "contract": "Full Time",
     "location": "USA Only",
-    "tags": ["JavaScript","Vue", "Sass"]
+    "tags": ["JavaScript","Vue", "Sass", "Frontend", "Junior"]
   },
   "EyecamCo": {
     "id": 9,
@@ -123,7 +123,7 @@
     "postedAt": "3w ago",
     "contract": "Full Time",
     "location": "Worldwide",
-    "tags": ["JavaScript", "Python","Django"]
+    "tags": ["JavaScript", "Python","Django", "Fullstack", "Midweight"]
   },
   "TheAirFilterCompany": {
     "id": 10,
@@ -137,6 +137,6 @@
     "postedAt": "1mo ago",
     "contract": "Part Time",
     "location": "Worldwide",
-    "tags": ["JavaScript","React", "Sass"]
+    "tags": ["JavaScript","React", "Sass", "Frontend", "Junior"]
   }
 }
