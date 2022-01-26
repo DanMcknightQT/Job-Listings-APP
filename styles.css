@@ -113,11 +113,11 @@ html,body{
     color: #7C8F8F;
 }
 
-#requirementsTags{
+.requirementsTags{
     margin-left: 24px;
 }
 
-#requirementsTags button{
+.requirementsTags button{
     background-color: #EFFAFA;
     border: none;
     font-family: spartanRegular;
@@ -230,13 +230,13 @@ html,body{
         color: #7C8F8F;
     }
 
-    #requirementsTags{
+    .requirementsTags{
         position: absolute;
         top: 60px;
         right: 30px;
     }
     
-    #requirementsTags button{
+    .requirementsTags button{
     background-color: #EFFAFA;
     border: none;
     font-family: spartanRegular;
@@ -244,7 +244,7 @@ html,body{
     font-weight: bold;
     }
 
-    #requirementsTags button:hover{
+    .requirementsTags button:hover{
         background-color: #5CA5A5;
         color: white;
     }
