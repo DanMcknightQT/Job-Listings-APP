@@ -44,7 +44,7 @@ const jsonEXT = '.json';
 
                 let JobListingFeatured = `
                     <div class="jobListing"
-                    <div id="logoCircle"> <img src="${logo}"> </img> </div>
+                    <div id="logoCircle"> <img id="logoImage" src="${logo}"> </img> </div>
                     <div id="companyName"> ${company} </div>
                     <div id="featuredTag">FEATURED</div>
                     <div id="position"> ${position} </div>
@@ -56,7 +56,7 @@ const jsonEXT = '.json';
                     </div>`
                 let JobListingNew = `
                     <div class="jobListing">
-                    <div id="logoCircle"> <img src="${logo}"> </img> </div>
+                    <div id="logoCircle"> <img id="logoImage" src="${logo}"> </img> </div>
                     <div id="companyName"> ${company} </div>
                     <div id="newTag">NEW!</div>
                     <div id="position"> ${position} </div>
@@ -68,7 +68,7 @@ const jsonEXT = '.json';
                     </div>`
                 let JobListingNewFeatured = `
                     <div class="jobListing">
-                    <div id="logoCircle"> <img src="${logo}"> </img> </div>
+                    <div id="logoCircle"> <img id="logoImage" src="${logo}"> </img> </div>
                     <div id="companyName"> ${company} </div>
                     <div id="newTag">NEW!</div>
                     <div id="featuredTag">FEATURED</div>
@@ -81,7 +81,7 @@ const jsonEXT = '.json';
                     </div>`
                 let JobListingDefault = `
                     <div class="jobListing">
-                    <div id="logoCircle"> <img src="${logo}"> </img> </div>
+                    <div id="logoCircle"> <img id="logoImage" src="${logo}"> </img> </div>
                     <div id="companyName"> ${company} </div>
                     <div id="position"> ${position} </div>
                     <div id="timeLocaleTags">${posted} • ${contract} • ${location}</div>

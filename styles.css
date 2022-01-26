@@ -45,6 +45,7 @@ html,body{
     background-color: white;
     height: 257px;
     width: 327px;
+    margin-bottom: 35px;
 }
 
 #logoCircle{
@@ -55,6 +56,13 @@ html,body{
     position: absolute;
     top: -24px;
     left: 24px;
+}
+
+#logoImage{
+    height: 48px;
+    width: 48px;
+    background-color: black;
+    border-radius: 50%;
 }
 
 #companyName{
@@ -164,6 +172,7 @@ html,body{
     background-color: white;
     height: 152px;
     width: 1110px;
+    margin-bottom: 24px;
     }
 
     #logoCircle{
