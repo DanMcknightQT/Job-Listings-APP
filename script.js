@@ -84,7 +84,7 @@ const jsonEXT = '.json';
                     <div id="logoCircle"> <img src="${logo}"> </img> </div>
                     <div id="companyName"> ${company} </div>
                     <div id="position"> ${position} </div>
-                    <div id="timeLocaleTags">${posted} '•' ${contract} '•' ${location}</div>
+                    <div id="timeLocaleTags">${posted} • ${contract} • ${location}</div>
                     <div class="break"></div>
                     <div class="requirementsTags">
                     ${tags}
