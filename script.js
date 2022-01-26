@@ -7,7 +7,6 @@ const jsonEXT = '.json';
         url: `${fireBaseURL}${jsonEXT}`,
         success: (data) => {
             let jobData = {...data}
-            console.log(jobData)
 
             Object.entries(jobData).forEach(([key, value]) => {
                 let companyName = key;
@@ -110,4 +109,3 @@ const jsonEXT = '.json';
 })()
 
 let jobList = []
-console.log(jobList)
