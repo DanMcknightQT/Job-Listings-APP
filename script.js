@@ -1,4 +1,4 @@
-const fireBaseURL = 'https://job-listings-app-21d09-default-rtdb.firebaseio.com/'
+const fireBaseURL = 'https://job-listings-app-21d09-default-rtdb.firebaseio.com/';
 const jsonEXT = '.json';
 
 (function(){
@@ -7,10 +7,8 @@ const jsonEXT = '.json';
         url: `${fireBaseURL}${jsonEXT}`,
         success: (data) => {
             let jobData = {...data}
-            //console.log(jobData)
 
             Object.entries(jobData).forEach(([key, value]) => {
-                //console.log('this is a value')
 
 
                 let JobListingFeatured = `
@@ -69,43 +67,14 @@ const jsonEXT = '.json';
 
                 if(value.new == true && value.featured == true){
                     $('.mainContentContainer').append(JobListingNewFeatured)
-                    //$('.requirementsTags').append(tags)
                 } else if(value.new == true && value.featured == false){
                     $('.mainContentContainer').append(JobListingNew)
-                    //$('.requirementsTags').append(tags)
                 } else if(value.new == false && value.featured == true){
                     $('.mainContentContainer').append(JobListingFeatured)
-                    //$('.requirementsTags').append(tags)
                 } else if(value.new == false && value.featured == false){
                     $('.mainContentContainer').append(JobListingDefault)
-                    //$('.requirementsTags').append(tags)
-                }
-
-
-
-                console.log('end of iteration')
-                
-
-                    
-                })
-
-
-
-            // Object.values(jobList).forEach(item => {
-            //     //console.log(jobList)
-            //     //let tagsList = []
-            //     let tagsP = item[11]
-            //     let company = item[0]
-            //     let contract = item[1]
-            //     let value.featured = item[2]
-            //     let level = item[4]
-            //     let location = item[5]
-            //     let logo = item[6]
-            //     let value.new = item[7]
-            //     let position = item[8]
-            //     let posted = item[9]
-            //     let role = item[10]
-            //})
+                }                  
+            })
 
         },
         error: (error) =>{
@@ -115,5 +84,9 @@ const jsonEXT = '.json';
 })()
 
 
-//let jobList = []
-//console.log(tagsList)
+$(document).on("click", ".requirementsTagButton", function(event){
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    console.log('test')
+
+})
