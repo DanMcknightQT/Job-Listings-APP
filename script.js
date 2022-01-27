@@ -21,7 +21,9 @@ const jsonEXT = '.json';
                     <div id="position"> ${value.position} </div>
                     <div id="timeLocaleTags">${value.postedAt} • ${value.contract} • ${value.location}</div>
                     <div class="break"></div>
-                    <div class="requirementsTags">
+                    <div class="requirementsTags"><button class="requirementsTagsButton">
+                    ${value.tags.join('</button> <button class="requirementsTagsButton">')}
+                    </button>
                     </div>
                     </div>`
                 let JobListingNew = `
@@ -32,7 +34,9 @@ const jsonEXT = '.json';
                     <div id="position"> ${value.position} </div>
                     <div id="timeLocaleTags">${value.postedAt} • ${value.contract} • ${value.location}</div>
                     <div class="break"></div>
-                    <div class="requirementsTags">
+                    <div class="requirementsTags"><button class="requirementsTagsButton">
+                    ${value.tags.join('</button> <button class="requirementsTagsButton">')}
+                    </button>
                     </div>
                     </div>`
                 let JobListingNewFeatured = `
@@ -44,7 +48,9 @@ const jsonEXT = '.json';
                     <div id="position"> ${value.position} </div>
                     <div id="timeLocaleTags">${value.postedAt} • ${value.contract} • ${value.location}</div>
                     <div class="break"></div>
-                    <div class="requirementsTags">
+                    <div class="requirementsTags"><button class="requirementsTagsButton">
+                    ${value.tags.join('</button> <button class="requirementsTagsButton">')}
+                    </button>
                     </div>
                     </div>`
                 let JobListingDefault = `
@@ -54,15 +60,11 @@ const jsonEXT = '.json';
                     <div id="position"> ${value.position} </div>
                     <div id="timeLocaleTags">${value.postedAt} • ${value.contract} • ${value.location}</div>
                     <div class="break"></div>
-                    <div class="requirementsTags">
+                    <div class="requirementsTags"><button class="requirementsTagsButton">
+                    ${value.tags.join('</button> <button class="requirementsTagsButton">')}
+                    </button>
                     </div>
                     </div>`
-    
-                //value.tags.forEach(value => {
-                //    tags = value
-                //})
-
-                //console.log(tags)
                     
 
                 if(value.new == true && value.featured == true){
