@@ -12,26 +12,34 @@ const jsonEXT = '.json';
         success: (data) => {
             let jobData = {...data}
 
-            // let sortNew = value.new
-            // let sortFeatured = value.featured
-            // let sortTags = value.tags
+            Object.values(jobData).forEach(value => {
+                
+                let jobDataToArray = Object.values(value)
+                console.log(jobDataToArray)
 
-            // console.log(sortNew)
-            // console.log(sortFeatured)
-            // console.log(sortTags)
+                let companyName = jobDataToArray[0]
+                let contract = jobDataToArray[1]
+                let featured = jobDataToArray[2]
+                let id = jobDataToArray[3]
+                let level = jobDataToArray[4]
+                let location = jobDataToArray[5]
+                let logo = jobDataToArray[6]
+                let newT = jobDataToArray[7]
+                let title = jobDataToArray[8]
+                let timePosted = jobDataToArray[9]
+                let role = jobDataToArray[10]
+                let tags = jobDataToArray[11]
 
+                let jobList = [timePosted, newT, featured, companyName, contract, id, level, location, logo, title, role, tags]
+                jobDataSortList.push(jobList)
+            })
 
-            // jobData.sort((sortFeatured, sortNew) => sortNew - sortFeatured)
-
-            //Object.entries(jobData)
-
-
-
-           
+            jobDataSortList.sort()
+            console.log(jobDataSortList)
 
             Object.entries(jobData).forEach(([key, value]) => {
 
-                console.log(value)
+                //console.log(value.company)
 
                 
 
@@ -91,7 +99,6 @@ const jsonEXT = '.json';
 
                 if(value.new == true && value.featured == true){
                     $('.mainContentContainer').append(JobListingNewFeatured)
-                    //$('.mainContentContainer').sort()
                 } else if(value.new == true && value.featured == false){
                     $('.mainContentContainer').append(JobListingNew)
                 } else if(value.new == false && value.featured == true){
@@ -107,6 +114,8 @@ const jsonEXT = '.json';
         }
     })
 })()
+
+let jobDataSortList = []
 
 
 // $('.requirementsTagsButton').on('click', function(event){
