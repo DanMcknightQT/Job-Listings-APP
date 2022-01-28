@@ -1,5 +1,9 @@
 const fireBaseURL = 'https://job-listings-app-21d09-default-rtdb.firebaseio.com/';
 const jsonEXT = '.json';
+// const filters = document.getElementById("TagButtonID");
+// const filterContainer = document.getElementById()
+
+// console.log(filters);
 
 (function(){
     $.ajax({
@@ -8,10 +12,28 @@ const jsonEXT = '.json';
         success: (data) => {
             let jobData = {...data}
 
+            // let sortNew = value.new
+            // let sortFeatured = value.featured
+            // let sortTags = value.tags
+
+            // console.log(sortNew)
+            // console.log(sortFeatured)
+            // console.log(sortTags)
+
+
+            // jobData.sort((sortFeatured, sortNew) => sortNew - sortFeatured)
+
+            //Object.entries(jobData)
+
+
+
+           
+
             Object.entries(jobData).forEach(([key, value]) => {
 
-                
+                console.log(value)
 
+                
 
                 let JobListingFeatured = `
                     <div class="jobListing"
@@ -69,6 +91,7 @@ const jsonEXT = '.json';
 
                 if(value.new == true && value.featured == true){
                     $('.mainContentContainer').append(JobListingNewFeatured)
+                    //$('.mainContentContainer').sort()
                 } else if(value.new == true && value.featured == false){
                     $('.mainContentContainer').append(JobListingNew)
                 } else if(value.new == false && value.featured == true){
@@ -76,6 +99,7 @@ const jsonEXT = '.json';
                 } else if(value.new == false && value.featured == false){
                     $('.mainContentContainer').append(JobListingDefault)
                 }
+
             })
         },
         error: (error) =>{
@@ -83,6 +107,7 @@ const jsonEXT = '.json';
         }
     })
 })()
+
 
 // $('.requirementsTagsButton').on('click', function(event){
 
