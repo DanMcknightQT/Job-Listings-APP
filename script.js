@@ -46,7 +46,7 @@ const jsonEXT = '.json';
                 let tags = item[11]
 
                 let JobListingFeatured = `
-                    <div class="jobListing"
+                    <div class="jobListing">
                     <div id="logoCircle"> <img id="logoImage" src="${logo}"> </img> </div>
                     <div id="companyName"> ${companyName} </div>
                     <div id="featuredTag">FEATURED</div>
